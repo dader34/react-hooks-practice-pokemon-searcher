@@ -9,7 +9,6 @@ function App() {
     fetch('http://localhost:3001/pokemon')
     .then(resp => resp.json())
     .then((data) => {setFilteredPokemon(data);setPokemon(data)})
-    .then(console.log)
   },[])
 
   const addPokemon = (newPokemon) =>{
